@@ -14,6 +14,60 @@
 
 ### This is a project stucture that build base on Clean architecture idea but not perfectly fit with the "core" business logic layer. because for In Django, views and serializers often involve interactions with the external frameworks
 
+## Structure Tree
+```
+📦app-repo
+ ┣ 📂core
+ ┃ ┣ 📂settings
+ ┃ ┃ ┣ 📂certificates
+ ┃ ┃ ┃ ┣ 📜certificate.crt
+ ┃ ┃ ┃ ┗ 📜certificate.key
+ ┃ ┃ ┣ 📜base.py
+ ┃ ┃ ┣ 📜dev.py
+ ┃ ┃ ┣ 📜environment.py
+ ┃ ┃ ┗ 📜local.py
+ ┃ ┣ 📂utils
+ ┃ ┃ ┣ 📜base_view_utils.py
+ ┃ ┃ ┗ 📜exception_utils.py
+ ┃ ┣ 📜asgi.py
+ ┃ ┣ 📜db.sqlite3
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜wsgi.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂modules
+ ┃ ┣ 📂order
+ ┃ ┃ ┣ 📂migrations
+ ┃ ┃ ┃ ┣ 📜0001_initial.py
+ ┃ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┃ ┣ 📜admin.py
+ ┃ ┃ ┣ 📜apps.py
+ ┃ ┃ ┣ 📜models.py
+ ┃ ┃ ┣ 📜serializers.py
+ ┃ ┃ ┣ 📜tests.py
+ ┃ ┃ ┣ 📜urls.py
+ ┃ ┃ ┣ 📜views.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┣ 📂user
+ ┃ ┃ ┣ 📂migrations
+ ┃ ┃ ┃ ┣ 📜0001_initial.py
+ ┃ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┃ ┣ 📜admin.py
+ ┃ ┃ ┣ 📜apps.py
+ ┃ ┃ ┣ 📜filters.py
+ ┃ ┃ ┣ 📜models.py
+ ┃ ┃ ┣ 📜repositories.py
+ ┃ ┃ ┣ 📜serializers.py
+ ┃ ┃ ┣ 📜tests.py
+ ┃ ┃ ┣ 📜urls.py
+ ┃ ┃ ┣ 📜views.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📜.gitignore
+ ┣ 📜manage.py
+ ┣ 📜README.md
+ ┗ 📜requirements.txt
+```
+
 ## PART 1: Starting django app
 
 ### 1. Create env
