@@ -67,6 +67,7 @@
  ┣ 📜README.md
  ┗ 📜requirements.txt
 ```
+## I will show you the process for clean architecture on `User Module` but for `Oder modules` i just init it by no reason =..=
 
 ## PART 1: Starting django app
 
